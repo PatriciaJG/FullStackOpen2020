@@ -8,7 +8,6 @@ const Header = (props) => {
     </div>
   )
 }
-
 const Part = (props) => {
   console.log(props)
   return (

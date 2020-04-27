@@ -17,12 +17,10 @@ const App = ({ anecdotes }) => {
     Array.apply(null, new Array(6)).map(Number.prototype.valueOf, 0)
   )
   const [mostVotedIndex, setMostVotedIndex] = useState(0)
-
   const randomAnecdote = () => {
     console.log('Cliicked')
     setSelected(Math.floor(Math.random() * anecdotes.length))
   }
-
   const votesUpdate = () => {
     const copyOfPoints = [...points]
     copyOfPoints[selected] += 1
@@ -48,7 +46,6 @@ const App = ({ anecdotes }) => {
     </div>
   )
 }
-
 const anecdotes = [
   'If it hurts, do it more often',
   'Adding manpower to a late software project makes it later!',
@@ -57,5 +54,4 @@ const anecdotes = [
   'Premature optimization is the root of all evil.',
   'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.',
 ]
-
 ReactDOM.render(<App anecdotes={anecdotes} />, document.getElementById('root'))

@@ -8,7 +8,6 @@ const Heading = ({ title }) => {
     </div>
   )
 }
-
 const Button = ({ handleClick, text }) => {
   return (
     <div>
